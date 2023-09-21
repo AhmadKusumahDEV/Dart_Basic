@@ -7,7 +7,7 @@ class Helloworld extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 0, 15, 4),
+          backgroundColor: const Color.fromARGB(255, 0, 15, 4),
           title: const Center(child: Text("Baris dan kolom")),
         ),
         body: Column(children: [
