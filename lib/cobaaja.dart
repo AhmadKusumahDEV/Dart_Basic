@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'row.dart';
 
-class Helloworld extends StatelessWidget {
-  const Helloworld({Key? key}) : super(key: key);
+class Helloworld2 extends StatelessWidget {
+  const Helloworld2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class Helloworld extends StatelessWidget {
           backgroundColor: const Color.fromARGB(255, 0, 15, 4),
           title: const Center(child: Text("Baris dan kolom")),
         ),
-        body: const Column(children: [
+        body: ListView(children: const [
           Row(
             children: [
               Expende("Baris 1, Kolom 1"),
