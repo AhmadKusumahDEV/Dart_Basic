@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'tugas1.dart';
+// import 'tugas1.dart';
 import 'cobaaja.dart';
 
 void main() {

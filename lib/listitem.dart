@@ -1,12 +1,12 @@
 import 'model.dart';
 import 'package:flutter/material.dart';
+import 'nextrouter.dart';
 
 class ItemUser extends StatelessWidget {
   final int index;
   final UserModel data;
-  final void Function(UserModel) onClick;
 
-  const ItemUser(this.index, this.data, this.onClick, {super.key});
+  const ItemUser(this.index, this.data, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +49,10 @@ class ItemUser extends StatelessWidget {
           ],
         ),
         onTap: () {
-          onClick(data);
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => NextRoute(
+                    appbarname: data.name,
+                  )));
         },
       ),
     );

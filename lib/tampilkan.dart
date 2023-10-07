@@ -50,15 +50,9 @@ class ListViewActivityState extends State<ListViewActivity> {
             padding: const EdgeInsets.only(bottom: 24),
             itemCount: data.length,
             itemBuilder: (BuildContext context, int index) {
-              return ItemUser(index, data[index], (dataModel) {
-                onListClick(dataModel);
-              });
+              return ItemUser(index, data[index]);
             }),
       ),
     );
-  }
-
-  onListClick(UserModel dataUser) {
-    print("Data: " + dataUser.name);
   }
 }
