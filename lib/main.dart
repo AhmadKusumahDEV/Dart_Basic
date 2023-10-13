@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'tugas1.dart';
-import 'cobaaja.dart';
+import 'row(remake).dart';
+import './kelima/poli_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Helloworld2(),
+      home: PoliPage(),
     );
   }
 }
