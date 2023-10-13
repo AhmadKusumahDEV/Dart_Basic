@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/poli.dart';
-import 'poli(item).dart';
+import 'poliItem.dart';
 import 'tambahpoli.dart';
 
 class PoliPage extends StatefulWidget {
