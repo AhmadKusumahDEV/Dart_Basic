@@ -23,27 +23,51 @@ class _PoliPageState extends State<PoliPage> {
                 ),
               ),
               onTap: () {
-                Poli poliAnak = new Poli(namaPoli: "poli anak");
+                Poli poliAnak = Poli(namaPoli: "poli anak");
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) => PoliDetail(
                           poli: poliAnak,
                         )));
               }),
-          const Card(
-            child: ListTile(
-              title: Text("poli kandungan"),
-            ),
-          ),
-          const Card(
-            child: ListTile(
-              title: Text("poli gigi"),
-            ),
-          ),
-          const Card(
-            child: ListTile(
-              title: Text("poli THT"),
-            ),
-          ),
+          GestureDetector(
+              child: const Card(
+                child: ListTile(
+                  title: Text("poli kandungan"),
+                ),
+              ),
+              onTap: () {
+                Poli poliAnak = Poli(namaPoli: "poli kandungan");
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => PoliDetail(
+                          poli: poliAnak,
+                        )));
+              }),
+          GestureDetector(
+              child: const Card(
+                child: ListTile(
+                  title: Text("poli gigi"),
+                ),
+              ),
+              onTap: () {
+                Poli poliAnak = Poli(namaPoli: "poli gigi");
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => PoliDetail(
+                          poli: poliAnak,
+                        )));
+              }),
+          GestureDetector(
+              child: const Card(
+                child: ListTile(
+                  title: Text("poli THT"),
+                ),
+              ),
+              onTap: () {
+                Poli poliAnak = Poli(namaPoli: "poli THT");
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => PoliDetail(
+                          poli: poliAnak,
+                        )));
+              }),
         ],
       ),
     );

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'tugas1.dart';
-import 'row(remake).dart';
+// import 'row(remake).dart';
 import './kelima/poli_page.dart';
 
 void main() {

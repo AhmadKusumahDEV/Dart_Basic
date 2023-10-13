@@ -7,10 +7,10 @@ class PoliDetail extends StatefulWidget {
   const PoliDetail({super.key, required this.poli});
 
   @override
-  State<PoliDetail> createState() => _poliDetailState();
+  State<PoliDetail> createState() => _PoliDetailState();
 }
 
-class _poliDetailState extends State<PoliDetail> {
+class _PoliDetailState extends State<PoliDetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
