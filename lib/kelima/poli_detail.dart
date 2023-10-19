@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/poli.dart';
+import './models/poli.dart';
 
 class PoliDetail extends StatefulWidget {
   final Poli poli;

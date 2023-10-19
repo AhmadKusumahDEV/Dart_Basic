@@ -38,14 +38,14 @@ class ListViewActivityState extends State<ListViewActivity> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
         title: const Text(
           "ListView.Builder",
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.yellow),
         ),
       ),
       body: Container(
-        decoration: const BoxDecoration(color: Colors.white),
+        decoration: const BoxDecoration(color: Colors.black),
         child: ListView.builder(
             padding: const EdgeInsets.only(bottom: 24),
             itemCount: data.length,

@@ -11,6 +11,7 @@ class ItemUser extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Colors.yellow[600],
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
       ),
@@ -21,7 +22,7 @@ class ItemUser extends StatelessWidget {
           children: <Widget>[
             CircleAvatar(
               radius: 24,
-              backgroundColor: Colors.lightBlue,
+              backgroundColor: Colors.black87,
               child: Text(
                 data.codeName,
                 style: const TextStyle(color: Colors.white),

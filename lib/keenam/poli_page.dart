@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/poli.dart';
+import './models/poli.dart';
 import 'poliItem.dart';
 import 'tambahpoli.dart';
 

@@ -1,7 +1,9 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:flutter/material.dart';
 
-class Helloworld extends StatelessWidget {
-  const Helloworld({Key? key}) : super(key: key);
+class BarisColum extends StatelessWidget {
+  const BarisColum({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

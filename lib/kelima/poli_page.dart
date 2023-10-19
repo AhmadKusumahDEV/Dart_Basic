@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'poli_detail.dart';
-import '../models/poli.dart';
+import './models/poli.dart';
 
 class PoliPage extends StatefulWidget {
   const PoliPage({super.key});
