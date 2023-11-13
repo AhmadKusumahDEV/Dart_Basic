@@ -4,17 +4,17 @@ import '../models/poli.dart';
 
 class PoliServices {
   Future<List<Poli>> getPoli() async {
-    final Response res = await Apiclient().getdata("poli");
-    final List data = res.data as List;
+    final res = await Apiclient().getdata("http://localhost:3001/poli/");
+    final List data = res.data;
     List<Poli> result = data.map((e) => Poli.fromJson(e)).toList();
     return result;
   }
 
   Future<Poli> simpan(Poli poli) async {
     var data = poli.toJson();
-    final Response res = await Apiclient().post("poli", data);
-    Poli result = Poli.fromJson(res.data);
-    return result;
+    final Response res =
+        await Apiclient().post("http://192.168.1.7:3001/poli/", data);
+    return res.data;
   }
 
   Future<Poli> ubah(Poli poli, String id) async {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './models/poli.dart';
-import './poli_detail.dart';
+import './poli_page.dart';
+import 'package:dio/dio.dart';
 
 class Poliform extends StatefulWidget {
   const Poliform({super.key});
@@ -12,6 +13,12 @@ class Poliform extends StatefulWidget {
 class _PoliformState extends State<Poliform> {
   final _formKey = GlobalKey<FormState>();
   final _namaPoliCtrl = TextEditingController();
+  final dio = Dio();
+
+  void postdata(String pol) async {
+    final data = {};
+    await dio.post('http://192.168.1.7:3001/poli/', data: data);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -41,12 +48,11 @@ class _PoliformState extends State<Poliform> {
 
   _tombolsimpan() {
     return ElevatedButton(
-        onPressed: () {
-          Poli poli = Poli(namaPoli: _namaPoliCtrl.text);
-          Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => PoliDetail(
-              poli: poli,
-            ),
+        onPressed: () async {
+          Poli pol = Poli(namaPoli: _namaPoliCtrl.text.toString());
+          postdata(pol.namaPoli);
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (context) => const PoliPage(),
           ));
         },
         child: const Text("Simpan"));

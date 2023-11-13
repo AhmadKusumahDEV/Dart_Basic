@@ -42,7 +42,7 @@ class _PoliformState extends State<Poliform> {
   _tombolsimpan() {
     return ElevatedButton(
         onPressed: () {
-          Poli poli = Poli(namaPoli: _namaPoliCtrl.text);
+          Poli poli = Poli(namaPoli: _namaPoliCtrl.text.toString());
           Navigator.of(context).push(MaterialPageRoute(
             builder: (context) => PoliDetail(
               poli: poli,

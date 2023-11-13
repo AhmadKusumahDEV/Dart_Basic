@@ -15,4 +15,25 @@ class Pasien {
       required this.tanggal_lahir,
       this.nomor_telepon = "083746528125",
       required this.alamat});
+
+  factory Pasien.fromJson(Map<String, dynamic> json) {
+    return Pasien(
+      id: json['id'],
+      nomor_rm: json['nomor_rm'],
+      nama: json['nama'],
+      tanggal_lahir: json['tanggal_lahir'],
+      nomor_telepon: json['nomor_telepon'],
+      alamat: json['alamat'],
+    );
+  }
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'nama': nama,
+      'nomor_rm': nomor_rm,
+      'tanggal_lahir': tanggal_lahir,
+      'nomor_telepon': nomor_telepon,
+      'alamat': alamat
+    };
+  }
 }
